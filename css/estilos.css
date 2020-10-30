@@ -1,0 +1,485 @@
+/*--- Fuente ---*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+	font-family: 'Amatic SC';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #f6f6f6;
+}
+
+header {
+	height: 100vh;
+	background: url(../img/bg-header.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: contain;
+}
+
+h3 {
+	text-align: center;
+	font-size: 60px;
+	font-weight: normal;
+}
+
+.rotate {
+	transition: transform 3s ease-out;
+	transform: rotate(360deg);
+}
+
+.menu-movil {
+	color: #000;
+	font-size: 35px;
+	cursor: pointer;
+	display: none;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+}
+
+.menu ul {
+	display: flex;
+	padding: 0px 50px;
+	margin: 0;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu ul li a {
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 22px 25px;
+	color: #000;
+}
+
+.menu ul li a:hover {
+	opacity: 0.7;
+	transition: transform 1s ease-out;
+	transform: scale(1.2);
+}
+
+.logo {
+	text-align: center;
+	margin-top: 150px;
+}
+
+.logo h1 {
+	font-size: 120px;
+	text-align: center;
+	margin: 0;
+	color: #000;
+}
+
+.logo h2 {
+	text-align: center;
+	font-size: 50px;
+	margin: 0 0 40px 0;
+	color: #000;
+}
+
+.que-hacemos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1280px;
+	width: 90%;
+	margin: auto;
+}
+
+.que-hacemos img {
+	width: 40%
+}
+
+.parrafo-que-hacemos {
+	width: 42%;
+}
+
+.parrafo-que-hacemos p {
+	font-size: 28px;
+}
+
+.serv {
+	margin-top: 120px;
+}
+
+.servicios {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	max-width: 1280px;
+	width: 90%;
+	margin: auto;
+}
+
+.servicio {
+	width: 23%;
+	padding: 45px 38px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	color: #fff;
+	height: auto;
+}
+
+.servicio img {
+	float: right;
+	width: 150px;
+	height: 116px;
+}
+
+.servicio h4 {
+	font-size: 28px;
+	margin: 0;
+}
+
+.servicio p {
+	font-size: 23px;
+	height: 140px;
+}
+
+.color1 {
+	background: #ff9999;
+}
+
+.color2 {
+	background: #cca8e9;
+}
+
+.trabajos {
+	max-width: 1280px;
+	width: 90%;
+	margin: auto;
+}
+
+.owl-nav {
+	text-align: center;
+}
+
+.owl-nav span {
+	font-size: 80px;
+	color: #000;
+}
+
+.porque {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	max-width: 1280px;
+	width: 90%;
+	margin: auto;
+	margin-top: 125px;
+	height: 80vh;
+}
+
+.porque h4 {
+	margin: 25px 0 35px 0;
+	font-size: 35px;
+}
+
+.porque p {
+	font-size: 28px;
+	line-height: 28px;
+}
+
+.porque-cards {
+	width: 28%;
+}
+
+.porque-cards i {
+	font-size: 80px;
+	color: #000;
+}
+
+.ir-arriba {
+	transform: scale(0);
+	transition: transform .1s ease-out;
+	font-size: 50px;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, .1);
+	cursor: pointer;
+	position: fixed;
+	z-index: 1000;
+	bottom: 8px;
+	right: 8px;
+}
+
+.contacto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #a56cc1;
+}
+
+.contenedor {
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+}
+
+.contenedor h3 {
+	width: 100%;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 5px;
+}
+
+.contenedor .row100 {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contenedor .row100 .col {
+	position: relative;
+	width: auto;
+	padding: 0 10px;
+	margin: 30px 0 10px;
+	transition: 0.5s;
+}
+
+.contenedor .row100 .inputBox {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+}
+
+.contenedor .row100 .inputBox input,
+.contenedor .row100 .inputBox.textarea textarea {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	padding: 0 10px;
+	z-index: 1;
+	color: #000;
+}
+
+.contenedor .row100 .inputBox .text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 24px;
+	padding: 0px 10px;
+	display: block;
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+.contenedor .row100 .inputBox input:focus+.text,
+.contenedor .row100 .inputBox input:valid+.text {
+	top: -35px;
+	left: -10px;
+}
+
+.contenedor .row100 .inputBox .line {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	transition: 0.5s;
+	border-radius: 2px;
+	pointer-events: none;
+}
+
+.contenedor .row100 .inputBox input:focus~.line,
+.contenedor .row100 .inputBox input:valid~.line {
+	height: 100%;
+}
+
+.contenedor .row100 .inputBox.textarea {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 10px 0;
+}
+
+.contenedor .row100 .inputBox.textarea textarea {
+	height: 100%;
+	resize: none;
+}
+
+.contenedor .row100 .inputBox textarea:focus+.text,
+.contenedor .row100 .inputBox textarea:valid+.text {
+	top: -35px;
+	left: -10px;
+}
+
+.contenedor .row100 .inputBox textarea:focus~.line,
+.contenedor .row100 .inputBox textarea:valid~.line {
+	height: 100%;
+}
+
+.alerta-form {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	padding: 10px;
+}
+
+input[type="submit"] {
+	border: none;
+	padding: 7px 35px;
+	cursor: pointer;
+	outline: none;
+	background: #fff;
+	color: #000;
+	font-size: 24px;
+	border-radius: 2px;
+}
+
+.redes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.redes a {
+	font-size: 30px;
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.redes a:hover {
+	color: #000;
+	transition: transform 1s ease-out;
+	transform: rotate(360deg);
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	background: #8b5ba3;
+	border-top: solid 1px #ffe2e2;
+}
+
+.copy {
+	font-size: 20px;
+	color: #fff;
+}
+
+@media all and (max-width: 920px) {
+
+	.ir-arriba {
+		background: rgba(0, 0, 0, .1);
+		font-size: 30px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		bottom: 6px;
+		right: 4px;
+	}
+
+	header {
+		background: url(../img/bg-header-movil.jpg);
+	}
+
+	.menu-movil {
+		display: flex;
+		justify-content: flex-end;
+		padding: 15px;
+	}
+
+	.menu {
+		display: block;
+		position: absolute;
+		top: 60px;
+		left: -100%;
+		width: 100%;
+		height: auto;
+		align-items: center;
+		background: #fcbad3;
+		transition: all 0.4s;
+	}
+
+	.menu ul {
+		flex-direction: column;
+		display: flex;
+		text-align: center;
+		padding: 0;
+	}
+
+	.menu ul li a {
+		border-bottom: 1px solid rgba(0, 0, 0, .2);
+	}
+
+	.logo {
+		margin-top: 60px;
+	}
+
+	h1 {
+		font-size: 49px;
+	}
+
+	h2 {
+		font-size: 19px;
+	}
+
+	h3 {
+		font-size: 46px;
+	}
+
+	.que-hacemos {
+		flex-direction: column;
+	}
+
+	.que-hacemos img {
+		width: 90%;
+	}
+
+	.parrafo-que-hacemos {
+		width: 90%;
+		margin-top: 20px;
+	}
+
+	.servicios {
+		flex-direction: column;
+	}
+
+	.servicio {
+		width: 72%;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+
+	.servicio p {
+		height: auto;
+	}
+
+	.porque {
+		flex-direction: column;
+		height: auto;
+		margin-top: auto;
+	}
+
+	.porque-cards {
+		width: 95%;
+		margin: auto;
+	}
+}
